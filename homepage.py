@@ -10,20 +10,17 @@ class homepage(tk.Frame):
         tk.Frame.__init__(self, master)
         tk.Label(self, text = '南方小幫手', font=('Arial',40,'bold'))\
             .pack(side = 'top', fill = 'x', pady = 50)
-<<<<<<< HEAD
-        tk.Button(self, text='捐款名冊'\
-            ).pack()
-        tk.Button(self, text='志工名冊'\
-            ).pack()
-        tk.Button(self, text='出席設定'\
-            , command = lambda:master.switch_frame(fare_calculator.fare)).pack()
-        tk.Button(self, text='學期統計'\
-            ).pack()
-=======
-        tk.Button(self, text='填寫出席'\
-            , command = lambda:master.switch_frame(fare_calculator.fare)).pack()
->>>>>>> a489096dc70bdfbe91aef8e36f06ee31e191e86c
-        
+
+        tk.Button(self, text='捐款名冊', font=('Arial',15)\
+            ).pack(pady = 10, ipady = 5)
+        tk.Button(self, text='志工名冊', font=('Arial',15)\
+            ).pack(pady = 10, ipady = 5)
+        tk.Button(self, text='出席設定', font=('Arial',15)\
+            , command = lambda:master.switch_frame(fare_calculator.fare))\
+            .pack(pady = 10, ipady = 5)
+        tk.Button(self, text='學期統計', font=('Arial',15)\
+            ).pack(pady = 10, ipady = 5)
+
 
 
         
