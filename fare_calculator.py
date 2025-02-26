@@ -15,6 +15,7 @@ viewbox = ''
 class fare(tk.Frame):
     def __init__(self, master):
         global in_name, in_school, in_date, in_num, inbox, viewbox
+
         tk.Frame.__init__(self, master)
 
         # 輸入資料之變數
